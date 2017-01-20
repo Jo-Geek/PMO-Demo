@@ -31,14 +31,3 @@ $('html').append(_blocks);
 //
 //},1000);
 
-setTimeout(function(){
-        $('.unfold-box').css('transform', 'scale(0)');
-        $('.unfold-box').css('opacity', '0');
-
-        $('#unfold-block').css('background','transparent');
-},1000);
-
-setTimeout(function(){
-$('html').css('overflow','hidden');
-$('#unfold-block').remove();
-},4000);
