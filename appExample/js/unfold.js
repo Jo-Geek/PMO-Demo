@@ -5,7 +5,7 @@ $('html').css('overflow','hidden');
   var _block_height = (_height / 9);
   var _block_width = (_width / 16);
   
-  var _animation_delay = 0.02;
+  var _animation_delay = 0.05;
   var _x_pos = 0;
   var _y_pos = 0;
   
@@ -17,7 +17,7 @@ $('html').css('overflow','hidden');
     
     _blocks += "<div class='unfold-box' style='top:"+ _y_pos + "px;left:"+ _x_pos + "px;transition-delay:"+ _animation_delay + "s;'></div>"
     
-    _animation_delay += 0.01; 
+    _animation_delay += 0.05; 
     _x_pos += _block_width;
     }
     _y_pos += _block_height;
