@@ -22,7 +22,7 @@ $('html').css('overflow','hidden');
     }
     _y_pos += _block_height;
   }
-_blocks += "</div>";
+_blocks += "<div id="loader"><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div></div>";
 
 $('html').append(_blocks);
 
