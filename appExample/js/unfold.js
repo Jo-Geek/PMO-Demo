@@ -15,7 +15,7 @@
 
 
    _blocks += "<div id='loader'><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div></div>";
-   document.getElementsByTagName("body")[0].insertAdjacentHTML('beforeend', _blocks);
+   document.getElementsByTagName("html")[0].insertAdjacentHTML('beforeend', _blocks);
 document.getElementsByTagName("body")[0].style.overflow = "hidden";
    setTimeout(function() {
 
