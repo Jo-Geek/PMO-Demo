@@ -19,19 +19,23 @@
 document.getElementsByTagName("body")[0].style.overflow = "hidden";
    setTimeout(function() {
 
+      alert("selecting al boxes");
      var _blocksDOM = document.querySelectorAll(".unfold-box");
      for (var k = 0; k < _blocksDOM.length; k++) {
        var block = _blocksDOM[k];
        block.classList.add("clear");
      }
+      alert("adding to wrap");
      document.getElementById("unfold-block").classList.add("clear");
    }, 2000);
 
    setTimeout(function() {
+      alert("adding to loader");
      document.getElementById('loader').classList.add('clear');
    }, 4000);
 
    setTimeout(function() {
+      alert("removing wrqap");
      document.getElementById("unfold-block").remove();
      document.getElementsByTagName("body")[0].style.overflow = "auto";
    }, 7000);
