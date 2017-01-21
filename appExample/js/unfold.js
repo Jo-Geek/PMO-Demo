@@ -15,27 +15,27 @@
 
 
    _blocks += "<div id='loader'><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div></div>";
-   document.getElementsByTagName("body")[0].insertAdjacentHTML('beforeend', _blocks);
-document.getElementsByTagName("body")[0].style.overflow = "hidden";
+   document.getElementsByTagName("html")[0].insertAdjacentHTML('beforeend', _blocks);
+document.getElementsByTagName("html")[0].style.overflow = "hidden";
    setTimeout(function() {
 
-      alert("selecting al boxes");
+      //alert("selecting al boxes");
      var _blocksDOM = document.querySelectorAll(".unfold-box");
      for (var k = 0; k < _blocksDOM.length; k++) {
        var block = _blocksDOM[k];
        block.classList.add("clear");
      }
-      alert("adding to wrap");
-     document.getElementById("unfold-block").classList.add("clear");
+      //alert("adding to wrap");
+     document.getElementById("unfold-block").classList.add("clearing");
    }, 2000);
 
    setTimeout(function() {
-      alert("adding to loader");
-     document.getElementById('loader').classList.add('clear');
+      //alert("adding to loader");
+     document.getElementById('loader').classList.add('clearing');
    }, 4000);
 
    setTimeout(function() {
-      alert("removing wrqap");
+      //alert("removing wrqap");
      document.getElementById("unfold-block").remove();
-     document.getElementsByTagName("body")[0].style.overflow = "auto";
+     document.getElementsByTagName("html")[0].style.overflow = "auto";
    }, 7000);
