@@ -31,7 +31,7 @@ document.getElementsByTagName("html")[0].style.overflow = "hidden";
 
    setTimeout(function() {
       //alert("adding to loader");
-     document.getElementById('loader').classList.add('clearing');
+     //document.getElementById('loader').classList.add('clearing');
    }, 4000);
 
    setTimeout(function() {
