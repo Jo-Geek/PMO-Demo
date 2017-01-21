@@ -15,8 +15,8 @@
 
 
    _blocks += "<div id='loader'><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span></div></div>";
-   document.getElementsByTagName("html")[0].insertAdjacentHTML('beforeend', _blocks);
-document.getElementsByTagName("html")[0].style.overflow = "hidden";
+   document.getElementsByTagName("body")[0].insertAdjacentHTML('beforeend', _blocks);
+document.getElementsByTagName("body")[0].style.overflow = "hidden";
    setTimeout(function() {
 
      var _blocksDOM = document.querySelectorAll(".unfold-box");
@@ -33,5 +33,5 @@ document.getElementsByTagName("html")[0].style.overflow = "hidden";
 
    setTimeout(function() {
      document.getElementById("unfold-block").remove();
-     document.getElementsByTagName("html")[0].style.overflow = "hidden";
+     document.getElementsByTagName("body")[0].style.overflow = "auto";
    }, 7000);
