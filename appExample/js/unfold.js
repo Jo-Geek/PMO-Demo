@@ -23,7 +23,7 @@ document.getElementsByTagName("html")[0].style.overflow = "hidden";
      var _blocksDOM = document.querySelectorAll(".unfold-box");
      for (var k = 0; k < _blocksDOM.length; k++) {
        var block = _blocksDOM[k];
-       block.classList.add("clear");
+       block.classList.add("clearing");
      }
       //alert("adding to wrap");
      document.getElementById("unfold-block").classList.add("clearing");
